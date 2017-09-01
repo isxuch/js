@@ -1,3 +1,3 @@
 function  xiaoxu(){
-	alert('123');
+	alert('1');
 }
