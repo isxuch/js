@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta name="viewport" content="user-scalable=no, width=device-width" />
+
+<link href="css/swiper-3.4.0.min.css" type="text/css" rel="stylesheet">
+
+<link href="css/style.css" type="text/css" rel="stylesheet">
+
+<script src="js/jquery.min.js"></script>
+
+<script>
+
+(function (doc, win) {
+    var _root = doc.documentElement,
+        resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        resizeCallback = function () {
+            var clientWidth = _root.clientWidth,
+                fontSize = 20;
+            if (!clientWidth) return;
+            if(clientWidth < 640) {
+                fontSize = 20 * (clientWidth / 320);
+            } else {
+                fontSize = 20 * (640 / 320);
+            }
+            _root.style.fontSize = fontSize + 'px';
+        };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvent, resizeCallback, false);
+    doc.addEventListener('DOMContentLoaded', resizeCallback, false);
+})(document, window);
+
+</script>
+
+<title>首页</title>
+
+</head>
+
+<body>
+<div class="zhuti">
+
+	<!-- 轮播图 -->
+	<div class="sy_lunbo">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background:url(images/banner01.jpg) center no-repeat; background-size:cover;"></div>
+				<div class="swiper-slide" style="background:url(images/banner01.jpg) center no-repeat; background-size:cover;"></div>
+				<div class="swiper-slide" style="background:url(images/banner01.jpg) center no-repeat; background-size:cover;"></div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+		</div>
+		<!-- 表单搜索 -->
+		<form id="myform">
+			<div class="top_sous clearfloat">
+				<div class="top_sous_l"></div>
+				<div class="top_sous_r">
+					<input class="top_sous_r_in" type="" name="" value="" placeholder="搜你想搜的" />
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<!-- 公告 -->
+	<div class="gongao">
+		<div class="gonggao-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">第一条通告</div>
+				<div class="swiper-slide">第二条通告</div>
+				<div class="swiper-slide">第三条通告</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 地区列表 -->
+	<div class="dq_list clearfloat" id="multi">
+		<ul class="dq_ul">
+			<li class="dq_li01"><a>
+				<div class="dq_ul_t"></div>
+				<div class="dq_ul_b">法国</div>
+			</a></li>
+			<li class="dq_li02"><a>
+				<div class="dq_ul_t"></div>
+				<div class="dq_ul_b">意大利</div>
+			</a></li>
+			<li class="dq_li03"><a>
+				<div class="dq_ul_t"></div>
+				<div class="dq_ul_b">澳大利亚</div>
+			</a></li>
+			<li class="dq_li04"><a>
+				<div class="dq_ul_t"></div>
+				<div class="dq_ul_b">德国</div>
+			</a></li>
+			<li class="dq_li05"><a>
+				<div class="dq_ul_t"></div>
+				<div class="dq_ul_b">美国</div>
+			</a></li>
+			<li class="dq_li06"><a>
+				<div class="dq_ul_t"></div>
+				<div class="dq_ul_b">西班牙</div>
+			</a></li>
+			<li class="dq_li07"><a>
+				<div class="dq_ul_t"></div>
+				<div class="dq_ul_b">阿根廷</div>
+			</a></li>
+			<li class="dq_li08"><a>
+				<div class="dq_ul_t"></div>
+				<div class="dq_ul_b">其他产地</div>
+			</a></li>
+		</ul>
+	</div>
+
+	<!-- 幸运抽奖 -->
+	<div class="xycj clearfloat">
+		<div class="xycj_l">
+			<a>
+				<p class="xycj_title01">幸运抽奖</p>
+				<p class="xycj_title02">免费领取进口红酒</p>
+			</a>
+		</div>
+		<div class="xycj_r">
+			<div class="xycj_r_top">
+				<a>
+					<p class="lqhb">领红包</p>
+					<p class="xjdfs">现金红包大放送</p>
+					<p class="ggo">GO</p>
+				</a>
+			</div>
+			<div class="xycj_r_bot">
+				<a>
+					<p class="lqhb lqhb_02">领红包</p>
+					<p class="xjdfs">现金红包大放送</p>
+					<p class="ggo ggo_02">GO</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 每日新品 -->
+	<div class="mrxp">
+		<div class="mrxp_top">
+			<p>每日新品.总有小惊喜</p>
+		</div>
+		<div class="mrxp_bottom">
+			<div class="mrxp-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a>
+							<div class="hjq_t" style="background:url(images/hj.jpg) center no-repeat; background-size:cover;"></div>
+							<div class="hjq_b">澳大利亚红酒</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a>
+							<div class="hjq_t" style="background:url(images/hj.jpg) center no-repeat; background-size:cover;"></div>
+							<div class="hjq_b">澳大利亚红酒</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a>
+							<div class="hjq_t" style="background:url(images/hj.jpg) center no-repeat; background-size:cover;"></div>
+							<div class="hjq_b">澳大利亚红酒</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="mrfy"></div>
+		</div>
+	</div>
+
+	<!-- 为您推荐 -->
+	<div class="wntj">
+		<div class="wntj_top">为您推荐.生活更享受</div>
+		<div class="wntj_bot">
+			<ul class="wntj_bot_ul clearfloat">
+				<li><a>
+					<div class="wntj_bot_ul_top"><img src="images/hj02.jpg" /></div>
+					<div class="wntj_bot_ul_bot">
+						<p>玛歌酒庄2002</p>
+						<p class="hjjg">￥9999.00</p>
+					</div>
+				</a></li>
+				<li><a>
+					<div class="wntj_bot_ul_top"><img src="images/hj02.jpg" /></div>
+					<div class="wntj_bot_ul_bot">
+						<p>玛歌酒庄2002</p>
+						<p class="hjjg">￥9999.00</p>
+					</div>
+				</a></li>
+				<li><a>
+					<div class="wntj_bot_ul_top"><img src="images/hj02.jpg" /></div>
+					<div class="wntj_bot_ul_bot">
+						<p>玛歌酒庄2002</p>
+						<p class="hjjg">￥9999.00</p>
+					</div>
+				</a></li>
+				<li><a>
+					<div class="wntj_bot_ul_top"><img src="images/hj02.jpg" /></div>
+					<div class="wntj_bot_ul_bot">
+						<p>玛歌酒庄2002</p>
+						<p class="hjjg">￥9999.00</p>
+					</div>
+				</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 底部导航 -->
+	<div class="bott_nav">
+		<ul class="bott_nav_ul clearfloat">
+			<li class="nav_01 dbxz"><a>首页</a></li>
+			<li class="nav_02"><a>分类</a></li>
+			<li class="nav_03"><a>购物车</a></li>
+			<li class="nav_04"><a>我</a></li>
+		</ul>
+	</div>
+
+<script src="js/swiper-3.4.0.jquery.min.js"></script>
+<!-- 拖动js库开始 -->
+<script src="js/Sortable.js"></script>
+<!-- 拖动js库结束 -->
+<script>
+<!-- 首页轮播    -->
+var mySwiper = new Swiper ('.swiper-container', {
+	direction: 'horizontal',
+	loop: true,
+	// 如果需要分页器
+	pagination: '.swiper-pagination',
+});
+<!-- 首页表单提交   -->
+$('.top_sous_l').click(function(){
+	document.getElementById("myform").submit();
+});
+<!-- 公告  -->
+var mySwiper = new Swiper ('.gonggao-container', {
+	direction: 'vertical',
+	loop: true,
+	autoplay : 5000,
+});
+<!-- 每日新品  -->
+var mySwiper = new Swiper ('.mrxp-container', {
+	//direction: 'horizontal',
+	slidesPerView : 3,
+	centeredSlides : true,
+	//slidesPerGroup :3,
+	spaceBetween : 10,
+	loop: true,
+	pagination: '.mrfy',
+	//autoplay : 5000,
+});
+<!-- 底部导航   -->
+$('.bott_nav_ul li').click(function(){
+	$(this).addClass('dbxz');
+	$(this).siblings().removeClass('dbxz');
+});
+
+
+//js拖动效果
+
+(function (){
+
+  [].forEach.call(multi.getElementsByClassName('dq_ul'), function (el){
+    Sortable.create(el, {
+      group: 'photo',
+      animation: 150
+    });
+  });
+
+})();
+
+</script>
+
+</div>
+</body>
+
+
+</html>
